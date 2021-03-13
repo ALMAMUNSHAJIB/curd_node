@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejs</title>
+</head>
+<body>
+    <h1>Hi it great work!!!</h1>
+    <p>This is eje <%= user.name %> templeate!!!</p>
+
+
+    <ul>
+        <% for (let p of posts)  {%>
+
+            <% if(p) { %>
+            <li>
+                <%= p.title %> by <%= p.author %>
+            </li>
+            <% } else {%>
+                <p>NO post </p>
+            <% } %>
+            <% } %>
+    </ul>
+   
+
+</body>
+</html>
